@@ -1,4 +1,4 @@
-# MyLinks - NodeJS-MYSQL-ES6+
+# MyMaps - Angular9 - GoogleMaps - MapBox
 
 _Aplicacion desarrollada con las tecnologias NODEJS y Angular 9 | creado el 07/07/2020_
 
