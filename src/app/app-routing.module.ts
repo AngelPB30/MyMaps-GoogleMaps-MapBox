@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MapsComponent } from './components/maps/maps.component';
+
+import { MapsComponent } from './components/mapsgoogle/maps.component';
 import { MapboxComponent } from './components/mapbox/mapbox.component';
+import { MapLeafletComponent } from './components/map-leaflet/map-leaflet.component';
 
 
 const routes: Routes = [
@@ -12,6 +14,10 @@ const routes: Routes = [
   {
     path: 'mapbox', 
     component: MapboxComponent
+  },
+  {
+    path: 'mapleaflet', 
+    component: MapLeafletComponent
   }
 ];
 

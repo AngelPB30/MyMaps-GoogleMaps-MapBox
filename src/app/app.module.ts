@@ -5,16 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-import { MapsComponent } from './components/maps/maps.component';
 
 import { AgmCoreModule } from '@agm/core';
+
+import { MapsComponent } from './components/mapsgoogle/maps.component';
 import { MapboxComponent } from './components/mapbox/mapbox.component';
+import { MapLeafletComponent } from './components/map-leaflet/map-leaflet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapsComponent,
-    MapboxComponent
+    MapboxComponent,
+    MapLeafletComponent,    
   ],
   imports: [
     BrowserModule,
