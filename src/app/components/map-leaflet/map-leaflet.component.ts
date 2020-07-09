@@ -87,7 +87,11 @@ export class MapLeafletComponent implements OnInit {
   }
 
   onListCoor(){
-    console.log(this.listCoor)
+    if(this.listCoor.length > 0){
+      console.log(this.listCoor)
+    }else{
+      alert("NO SE TIENE COORDENADAS ADICIONALES AGREGADOS")
+    }
   }
 
   onloaderUbicacion(){
