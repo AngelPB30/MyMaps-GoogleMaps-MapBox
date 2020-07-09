@@ -44,6 +44,12 @@ export class MapLeafletComponent implements OnInit {
       maxZoom: 18,
       minZoom: 15
     }).addTo(this.map);
+
+    this.map.locate({enableHighAccuracy:true})
+    this.map.on('locationfound', e =>{
+      console.log(e)
+      
+    })
   }
 
   loaderMarker(){
@@ -91,7 +97,7 @@ export class MapLeafletComponent implements OnInit {
         console.log(coords);
 
         this.iconMarker = L.icon({
-          iconUrl: 'assets/img/marker01.png',
+          iconUrl: 'assets/img/marker03.png',
           iconSize: [50, 26]
         })
 
