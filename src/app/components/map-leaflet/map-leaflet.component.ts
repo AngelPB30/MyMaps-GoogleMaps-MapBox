@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as L from "leaflet";
-
 @Component({
   selector: 'app-map-leaflet',
   templateUrl: './map-leaflet.component.html',
@@ -25,7 +24,7 @@ export class MapLeafletComponent implements OnInit {
     this.loaderMap();
     this.loaderMarker();
     this.ondblClickMap();
-    // this.onloaderUbicacion();
+    this.onloaderUbicacion();
   }
 
   loaderMap() {
@@ -47,8 +46,7 @@ export class MapLeafletComponent implements OnInit {
 
     this.map.locate({enableHighAccuracy:true})
     this.map.on('locationfound', e =>{
-      console.log(e)
-      
+      console.log(e)      
     })
   }
 
@@ -90,7 +88,7 @@ export class MapLeafletComponent implements OnInit {
     if(this.listCoor.length > 0){
       console.log(this.listCoor)
     }else{
-      alert("NO SE TIENE COORDENADAS ADICIONALES AGREGADOS")
+      alert("No se han agregado coordenadas nuevas!!")
     }
   }
 
@@ -99,16 +97,17 @@ export class MapLeafletComponent implements OnInit {
       (pos) => {
         const {coords} = pos;
         console.log(coords);
-
-        this.iconMarker = L.icon({
-          iconUrl: 'assets/img/marker03.png',
+        let marketNew = L.icon({
+          iconUrl: 'assets/img/marker02.png',
           iconSize: [50, 26]
         })
 
         L.marker([coords.latitude, coords.longitude], {
-          icon: this.iconMarker,
+          icon: marketNew,
           draggable: false
         }).addTo(this.map)
+        .bindPopup('<center>Mi Posicion<br><b>Lat: </b>'+coords.latitude+'- <b>Lng: </b>'+coords.longitude+'</center>')
+        .openPopup();
       },
       (err) => {
         console.log(err)
