@@ -1,6 +1,6 @@
-# MyMaps - Angular9 - GoogleMaps - MapBox
+# MyMaps - Angular9 - GoogleMaps - MapBox - Leaflet
 
-_Aplicacion desarrollada con las tecnologias NODEJS y Angular 9 | creado el 07/07/2020_
+_Aplicacion desarrollada para trabajar con mapas, se usaron las tecnologias NODEJS y Angular 9 | creado el 07/07/2020_
 
 ## Construido con 🛠️
 
@@ -11,7 +11,6 @@ _El proyecto se desarrollo con los siguientes modulos de NodeJS_
 * [Mapbox](https://www.mapbox.com/) Mapbox GL JS versión v1.11.0.
 * [Leaflet](https://leafletjs.com/) Leaflet versión 1.6.0 (npm i leaflet - npm i @types/leaflet --save-dev).
 * [Tiles](https://wiki.openstreetmap.org/wiki/Tiles)openstreetmap.org (para no usar una keyAPI)
-
 
 ## Autor ✒️
 
