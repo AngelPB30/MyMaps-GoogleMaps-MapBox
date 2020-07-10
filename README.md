@@ -17,4 +17,4 @@ _El proyecto se desarrollo con los siguientes modulos de NodeJS_
 * **Angel Plaza Bustamante** - *Trabajo Inicial* - [AngelPB30](https://github.com/AngelPB30) 
 
 ---
-⌨️ con ❤️ por [AngelPB30](https://github.com/AngelPB30) 😊
+⌨️ By [AngelPB30](https://github.com/AngelPB30) 😊
